@@ -19,5 +19,3 @@
 ### 8.添加normalize.css初始化样式
 
 ### 9.添加rollup-plugin-visualizer插件，用于分析打包后的文件大小
-
-### 10.添加unplugin-auto-import插件、 unplugin-vue-components插件
