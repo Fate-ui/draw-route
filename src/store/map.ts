@@ -59,7 +59,7 @@ export const useMapStore = defineStore({
         layer?.remove()
       })
 
-      L.imageOverlay(`/${allFloors[this.currentFloor]}.svg`, mapBounds).addTo(map)
+      L.imageOverlay(`${allFloors[this.currentFloor]}.svg`, mapBounds).addTo(map)
       emitter.emit('floorChange', floor)
     },
 
