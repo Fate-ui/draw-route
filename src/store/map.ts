@@ -41,7 +41,7 @@ export const useMapStore = defineStore({
       //     '<img src="https://webapi.amap.com/theme/v2.0/logo@2x.png" style="width: 73px; height: 20px; vertical-align: middle" / > &copy; 2022 AutoNavi - GS(2021)6375号'
       // }).addTo(map)
       // 加载图片图层
-      L.imageOverlay(`/${allFloors[this.currentFloor]}.svg`, mapBounds).addTo(map)
+      L.imageOverlay(`${allFloors[this.currentFloor]}.svg`, mapBounds).addTo(map)
       watch(
         () => this.currentFloor,
         (val, oldValue) => {
