@@ -13,18 +13,5 @@ export default defineConfig(({ mode }) => {
       }
     },
     plugins: createVitePlugins(),
-    server: {
-      host: '0.0.0.0',
-      hmr: true,
-      open: false,
-      proxy: {
-        '/api': {
-          target: 'http://192.168.101.13:5000/',
-          changeOrigin: true,
-          ws: true,
-          rewrite: (path) => path.replace(new RegExp('^/api'), '')
-        }
-      }
-    }
   }
 })
