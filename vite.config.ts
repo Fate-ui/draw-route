@@ -4,7 +4,7 @@ import { createVitePlugins } from './config/vitePlugin'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const base = mode === 'development' ? '/' : '/draw-route/'
+  const base = mode === 'development' ? '/' : '/draw-route'
   return {
     base,
     resolve: {
